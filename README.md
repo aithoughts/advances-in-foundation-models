@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 首页
+title: 课程：基础模型的进展
 nav_exclude: false
 nav_order: 1
 permalink: /:path/
