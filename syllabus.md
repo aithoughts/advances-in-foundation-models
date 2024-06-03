@@ -1,18 +1,25 @@
 ---
 layout: default
-title: Topics / Syllabus
+title: 课程主题
 nav_order: 3
 has_children: false
 ---
 
-以下是文本的中文翻译：
-# 课程主题（2023年冬季）
+# 课程主题
 作为阅读资源，请查看以下课程主题及相关材料列表。在每个主题下，我们包括了一系列相关阅读材料，包括讲座笔记、博客文章、论文和其他资源。
-我们将课程主题广泛地组织在三个领域：**（1）** [基础知识](#基础知识)，**（2）** [现有基础模型（FMs）及其应用的调查](#现有基础模型及其应用的调查)，和 **（3）** [社会考量与影响](#社会考量与影响)。下面的相关阅读和材料列表并不详尽；我们将在本季度过程中更新此页面，并鼓励您深入探索您感兴趣的主题。这些主题的展示顺序*并非*课程中的覆盖顺序。
-特别感谢原创内容创作者，包括[过去版本的CS 324](https://aithoughts.github.io/large-language-models/lectures/)的课程笔记。    
+
+我们将课程主题广泛地组织在三个领域：
+
+**（1）** [基础知识](#基础知识)
+**（2）** [现有基础模型（FMs）及其应用的调查](#现有基础模型及其应用的调查)
+**（3）** [社会考量与影响](#社会考量与影响)。
+    
 ---
+
 ### 目录  
+
 - [**基础知识**](#基础知识)  
+
   - [什么是基础模型（FMs）？为什么它们有趣？](#什么是基础模型FMs及为什么它们有趣)  
   - [数据如何影响FMs及其下游效应？](#数据如何影响FMs及其下游效应)  
   - [我们如何训练FMs及其下游效应？](#我们如何训练FMs及其下游效应)  
@@ -20,16 +27,24 @@ has_children: false
   - [涌现行为和能力](#涌现行为和能力)  
   - [将FMs适应于新任务和数据领域](#将FMs适应于新任务和数据领域)  
   - [训练方法和基础设施](#训练方法和基础设施)
+
 - [**现有基础模型及其应用的调查**](#现有基础模型及其应用的调查)  
+
   - [文本及（掩码）语言建模FMs](#文本及掩码语言建模FMs)   
   - [图像-文本和多模态FMs](#图像-文本和多模态FMs)    
+
 - [**社会考量与影响**](#社会考量与影响)  
+
   - [安全与隐私](#安全与隐私)
   - [环境影响](#环境影响)  
   - [法律考量](#法律考量)
+
 ---
+
 ## 基础知识
+
 ### 什么是基础模型（FMs）？为什么它们有趣？   
+
 * *背景知识：神经网络（Andrej Karpathy的课程系列）*：
   - [神经网络：从零到英雄](https://github.com/karpathy/nn-zero-to-hero)    
 * *课程笔记*:  
@@ -39,7 +54,9 @@ has_children: false
 * *论文*:  
   - [语言模型是少量样本学习者](https://arxiv.org/abs/2005.14165)      
   - [论基础模型的机会与风险](https://arxiv.org/abs/2108.07258)      
+
 ### 数据如何影响FMs及其下游效应？
+
 * *课程笔记*:  
   - [用于训练FMs的数据](https://aithoughts.github.io/large-language-models/lectures/data/)    
   - [数据的危害（第一部分）](https://aithoughts.github.io/large-language-models/lectures/harms-1/)    
@@ -51,7 +68,9 @@ has_children: false
   - [去重训练数据使语言模型更好](https://arxiv.org/abs/2107.06499)    
   - [重复数据的学习可扩展性和可解释性](https://arxiv.org/abs/2205.10487)    
   - [随机鹦鹉的危险：语言模型是否可能过大？ 🦜](https://dl-acm-org.stanford.idm.oclc.org/doi/abs/10.1145/3442188.3445922)    
+
 ### FMs的模型架构和训练目标  
+
 * *课程笔记*：
   - [LLM架构](https://aithoughts.github.io/large-language-models/lectures/modeling/)      
   - [LLM训练目标](https://aithoughts.github.io/large-language-models/lectures/training/)    
@@ -61,7 +80,9 @@ has_children: false
   - [ELECTRA：将文本编码器预训练为判别器而非生成器](https://arxiv.org/abs/2003.10555)      
   - [统一语言学习范式](https://arxiv.org/abs/2205.05131)      
   - [使用统一文本到文本转换器探索迁移学习的极限](https://arxiv.org/abs/1910.10683)      
+
 ### 涌现行为和能力  
+
 * *课程笔记*:  
   - [扩展定律](https://aithoughts.github.io/large-language-models/assets/pdfs/Scaling%20laws%20pdf.pdf)      
 * *博客文章*:  
@@ -75,7 +96,9 @@ has_children: false
   - [数据分布属性驱动变压器中的少量样本学习](https://arxiv.org/abs/2205.05055)        
   - [将上下文学习解释为隐式贝叶斯推理](https://arxiv.org/abs/2111.02080)      
   - [重新思考示范的作用：是什么让上下文学习工作？](https://arxiv.org/abs/2202.12837)    
+
 ### 将FMs适应于新任务和数据领域    
+
 * *课程笔记*：
   - [适应大型语言模型](https://aithoughts.github.io/large-language-models/lectures/adaptation/)      
 * *博客文章*:  
@@ -87,7 +110,9 @@ has_children: false
   - [规模对参数高效提示调整的功效](https://arxiv.org/abs/2104.08691)      
   - [LoRA：低秩适应大型语言模型](https://arxiv.org/abs/2106.09685)      
   - [大规模快速模型编辑](https://arxiv.org/abs/2110.11309)      
+
 ### 训练方法和基础设施  
+
 * *课程笔记*:  
 * *博客文章*:  
   - [BLOOM训练背后的技术](https://huggingface.co/blog/bloom-megatron-deepspeed)      
@@ -96,9 +121,13 @@ has_children: false
   - [Megatron-LM：使用模型并行性训练数十亿参数的语言模型](https://arxiv.org/abs/1909.08053)      
   - [FlashAttention：快速且内存高效的精确注意力机制与IO感知](https://arxiv.org/abs/2205.14135)      
   - [训练过程（第2.5节），OPT：开放预训练转换器语言模型](https://arxiv.org/abs/2205.01068)     (也请参见[完整的训练日志](https://github.com/facebookresearch/metaseq/blob/main/projects/OPT/chronicles/README.md))      
+
 ---
+
 ## 现有基础模型及其应用的调查
+
 ### 文本及（掩码）语言建模FMs  
+
 * *课程笔记*:  
 * *博客文章*:  
   - [使语言模型遵循指示](https://openai.com/blog/instruction-following/)      
@@ -113,7 +142,9 @@ has_children: false
   - [GatorTron：一个用于临床自然语言处理的的大型语言模型](https://www.medrxiv.org/content/10.1101/2022.02.27.22271257v2.full)     
   - [法律堆：从法律和256GB开源法律数据集中学习负责任的数据过滤](https://arxiv.org/abs/2207.00220)      
   - [LegalBench：为法律推理原型化协作基准](https://arxiv.org/abs/2209.06120)      
+
 ### 图像-文本和多模态FMs  
+
 * *课程笔记*:  
 * *博客文章*:  
 * *论文*: 
@@ -131,9 +162,13 @@ has_children: false
   - [A Generalist Agent](https://arxiv.org/abs/2205.06175)    
   - [Video PreTraining (VPT)：通过观看未标记在线视频学习行动](https://arxiv.org/abs/2206.11795)      
   - [MineDojo：构建具有互联网规模知识的开放性身体化代理](https://arxiv.org/abs/2206.08853)      
+
 ---
+
 ## 社会考量与影响
+
 ### 安全与隐私  
+
 * *课程笔记*:  
   - [安全与隐私](https://aithoughts.github.io/large-language-models/assets/pdfs/Privacy%20pdf.pdf)      
 * *博客文章*:  
@@ -142,7 +177,9 @@ has_children: false
   - [公平学习](https://texaslawreview.org/fair-learning/)      
   - [大型语言模型可以是强差分隐私学习者](https://arxiv.org/abs/2110.05679)      
   - [基础模型能帮助我们实现完美保密吗？](https://arxiv.org/abs/2205.13722)    
+
 ### 环境影响 
+
 * *课程笔记*:  
   - [环境影响](https://aithoughts.github.io/large-language-models/lectures/environment/)      
 * *博客文章*:  
@@ -151,7 +188,9 @@ has_children: false
   - [大型神经网络训练的碳排放](https://arxiv.org/abs/2104.10350)      
   - [揭示AI解决方案对环境的隐藏环境影响](https://arxiv.org/abs/2110.11822)      
   - [基础模型的机会与风险中的环境影响部分](https://crfm.stanford.edu/assets/report.pdf#environment)      
+
 ### 法律考量 
+
 * *课程笔记*:  
   - [法律性](https://aithoughts.github.io/large-language-models/lectures/legality/)      
 * *博客文章*:  
@@ -161,6 +200,9 @@ has_children: false
   - [互联网法](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3191751)      
   - [AI监管即将到来](https://hbr.org/2021/09/ai-regulation-is-coming)      
   - [基础模型的机会与风险中的法律性部分](https://crfm.stanford.edu/assets/report.pdf#legality)   
+
 ---
+
 ## 结论
-本课程旨在提供关于基础模型（FMs）的基础知识和深入探讨，以及它们在社会、法律、伦理和环境影响方面的考量。我们将通过一系列的主题和阅读材料，探讨这些模型的工作原理、它们的局限性以及它们对社会的影响。通过这些学习，我们希望您能够更好地理解这些模型，并能够评估它们在现实世界中的应用。
+
+本课程旨在提供关于基础模型（FMs）的基础知识和深入探讨，以及它们在社会、法律、伦理和环境影响方面的考量。我们通过一系列的主题和阅读材料，探讨这些模型的工作原理、它们的局限性以及它们对社会的影响。通过这些学习，我们希望你能够更好地理解这些模型，并能够评估它们在现实世界中的应用。

@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Stanford CS 324
-tagline: Advances in Foundation Models
-description: Understanding and building on foundation models.
-author: aster.ai
+title: 斯坦福大学 CS324
+tagline: 基础模型的进展
+description: 理解并基于基础模型进行构建。
+author: aithoughts
 url: https://aithoughts.github.io
 baseurl: '/advances-in-foundation-models'
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]

@@ -1,11 +1,7 @@
 ---
-title: Week 2
+title: 第二周
 ---
 
-Jan 16
-: **Holiday**{: .label .label-purple }[MLK Day](#)
-  : 
-
 Jan 18
-: **Speaker**{: .label .label-green }[Model Training](#)
+: **主题**{: .label .label-green }[Model Training (模型训练)](#)
   : Ce Zhang
